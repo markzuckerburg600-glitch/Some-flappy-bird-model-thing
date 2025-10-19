@@ -15,13 +15,13 @@ class Birdgame():
             os.environ["SDL_VIDEODRIVER"] = "dummy"
         if render:
             # Sounds
-            # self.song = pygame.mixer.music.load("2016music.wav")
-            # pygame.mixer.music.set_volume(0.9)
-            # pygame.mixer.music.play(-1)
-            # self.jump_sound = pygame.mixer.Sound("sound.wav")
-            # self.jump_sound.set_volume(1)
-            # self.death_sound = pygame.mixer.Sound("gta_death.wav")
-            # self.death_sound.set_volume(0.7)       
+            self.song = pygame.mixer.music.load("2016music.wav")
+            pygame.mixer.music.set_volume(0.9)
+            pygame.mixer.music.play(-1)
+            self.jump_sound = pygame.mixer.Sound("sound.wav")
+            self.jump_sound.set_volume(1)
+            self.death_sound = pygame.mixer.Sound("gta_death.wav")
+            self.death_sound.set_volume(0.7)       
             pygame.display.set_caption("Flappy Rat")
         self.screen = pygame.display.set_mode((1300, 1000))
         self.top_level = 20
